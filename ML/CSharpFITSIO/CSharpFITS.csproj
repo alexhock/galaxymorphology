@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BC5F834-BB3A-43D0-A954-E214186BED0D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CSharpFITS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CSharpFITS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\AsciiTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\AsciiTableHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\BadHeaderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\BasicHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\BinaryTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\BinaryTableHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\Fits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsHeap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\FitsUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\Header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\HeaderCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\HeaderCardException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\ImageData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\ImageHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\RandomGroupsData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\RandomGroupsHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\StreamedBinaryTableHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\TableData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\TableHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\TruncatedFileException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\UndefinedData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\fits\UndefinedHDU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\image\ImageTiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ActualBufferedStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\AdapterStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ArrayDataIO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ArrayFuncs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\BufferedDataStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\BufferedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ByteFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ByteParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ByteRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ColumnTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\ConfigStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\Cursor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\DataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\DefaultValueHashtable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\HashedList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\HeapStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\PrimitiveInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\RandomAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\RowSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\StringToByteStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\TableException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\test\ArrayFuncsTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\test\BufferedFileTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\test\ByteFormatParseTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\test\HashedListTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\Troolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="nom\tam\util\TruncationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupportClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

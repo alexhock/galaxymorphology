@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="default :: header (title='View')">
+</head>
+<body>
+<div id="page">
+    <div id="header">
+        <div th:include="default :: menu (index='view')"></div>
+    </div>
+
+    <div id="body" class="browse">
+        <div class="header">
+            <div>
+                <h1 th:text="@{Galaxy Details - Class: {classid}
+                    (classid=${classId})}"/>
+
+                <p>The following are the images and details of the first 50 galaxies in the classification.</p>
+            </div>
+        </div>
+        <div class="body">
+        <div>
+        <a th:each="galaxy : ${galaxies}" th:href="@{/near-search.html(dyn='true',ra1=${galaxy.ra},dec1=${galaxy.dec})}">
+            <img
+                 th:src="@{/images/catalogue/galaxy_{fieldId}_{objectId}.jpg(fieldId=${galaxy.fieldId},objectId=${galaxy.objectId})}"
+                 th:title="@{field: {fieldText} RA: {ra} Dec: {dec} objectId: {objectId}
+                     (fieldText=${galaxy.fieldText},ra=${galaxy.ra},dec=${galaxy.dec},objectId=${galaxy.objectId})}"/>
+        </a>
+<!--th:each="galaxy : ${galaxies}"-->
+        <table style="color:white; font-family:sans-serif">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <!-- <th>Object Id</th>-->
+                    <th>RA</th>
+                    <th>DEC</th>
+                    <th>F160W</th>
+                    <th>F125W</th>
+                    <th>F814W</th>
+                    <th>F606W</th>
+                    <th>F435W</th>
+                    <th>Kron Radius</th>
+                    <th>Zphot</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="p_scents">
+                    <tr th:each="g:${galaxies}" style="font-size:0.9em">
+                        <td th:text="${g.fieldText}"/>
+                       <!-- <td th:text="${g.objectId}"/>-->
+                        <td th:text="${g.raStr}"/>
+                        <td th:text="${g.decStr}"/>
+                        <td th:text="${g.mag160w}"/>
+                        <td th:text="${g.mag125w}"/>
+                        <td th:text="${g.mag814w}"/>
+                        <td th:text="${g.mag606w}"/>
+                        <td th:text="${g.mag435w}"/>
+                        <td th:text="${g.kronRadius}"/>
+                        <td th:text="${g.zPhoto}"/>
+                        <td>
+                            <a th:href="@{/near-search.html(dyn='true',ra1=${g.ra},dec1=${g.dec})}">
+                            <img
+                                 th:src="@{/images/catalogue/galaxy_{fieldId}_{objectId}.jpg
+                                    (fieldId=${g.fieldId},objectId=${g.objectId})}"
+                                 th:title="@{field: {fieldText} RA: {ra} Dec: {dec} objectId: {objectId}
+                                    (fieldText=${g.fieldText},ra=${g.raStr},dec=${g.decStr},objectId=${g.objectId})}"/>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="gal-class" style="padding:0px">
+
+        </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

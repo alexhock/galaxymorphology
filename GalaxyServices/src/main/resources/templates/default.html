@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="header(title)">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${title}">Default</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css" />
+    <script src="/js/mobile.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div th:fragment="menu(index)">
+                <a href="/index.html" class="logo"><img src="/images/logo.png" alt=""/></a>
+                <ul id="navigation">
+                    <li th:class="${index} == 'index'? 'selected' : ''">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li th:class="${index} == 'view'? 'selected' : ''">
+                        <a href="/browse.html">View</a>
+                    </li>
+                    <li th:class="${index} == 'search'? 'selected' : ''">
+                        <a href="/near-search.html">Search</a>
+                    </li>
+                    <li th:class="${index} == 'download'? 'selected' : ''">
+                        <a href="/catalogue1.html">Download</a>
+                    </li>
+                    <li th:class="${index} == 'about'? 'selected' : ''">
+                        <a href="/about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+        </div>
+    </div>
+</body>
+</html>

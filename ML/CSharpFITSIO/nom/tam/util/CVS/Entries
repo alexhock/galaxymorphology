@@ -1,0 +1,24 @@
+/ByteFormatter.cs/1.1.1.1/Wed Mar  2 22:30:05 2005//
+/DataTable.cs/1.1.1.1/Wed Mar  2 22:30:05 2005//
+/TableException.cs/1.1.1.1/Wed Mar  2 22:30:05 2005//
+/TruncationException.cs/1.1.1.1/Wed Mar  2 22:30:05 2005//
+D/test////
+/ColumnTable.cs/1.4/Mon Jun 13 19:24:54 2005//
+/Cursor.cs/1.2/Mon Jun 13 19:24:54 2005//
+/PrimitiveInfo.cs/1.4/Wed Jun 29 18:15:08 2005//
+/HashedList.cs/1.4/Fri Jul 15 17:32:07 2005//
+/Troolean.cs/1.1/Fri Jul  1 19:55:42 2005//
+/ArrayDataIO.cs/1.2/Tue Sep  6 20:02:33 2005//
+/BufferedFile.cs/1.3/Tue Sep  6 20:08:01 2005//
+/RandomAccess.cs/1.2/Tue Sep  6 20:09:27 2005//
+/AdapterStream.cs/1.2/Wed Sep 14 21:33:39 2005//
+/ConfigStream.cs/1.1/Wed Sep 14 21:38:48 2005//
+/ActualBufferedStream.cs/1.3/Fri Sep 16 19:32:28 2005//
+/HeapStream.cs/1.3/Fri Sep 16 19:42:50 2005//
+/ArrayFuncs.cs/1.6/Thu Dec  1 23:15:47 2005//
+/ByteParser.cs/1.4/Thu Jan  5 23:15:20 2006//
+/ByteRenderer.cs/1.14/Thu Dec  1 23:48:23 2005//
+/DefaultValueHashtable.cs/1.1/Thu Dec  1 22:10:26 2005//
+/RowSource.cs/1.11/Thu Jan  5 20:37:01 2006//
+/StringToByteStream.cs/1.1/Thu Sep 15 19:02:31 2005//
+/BufferedDataStream.cs/1.8/Mon Jun 19 16:35:24 2006//

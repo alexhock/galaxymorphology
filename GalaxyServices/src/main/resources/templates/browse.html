@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Catalogue</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css" />
+    <script src="/js/mobile.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="page">
+    <div id="header">
+        <div>
+            <a href="/index.html" class="logo"><img src="/images/logo.png" alt=""/></a>
+            <ul id="navigation">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="selected">
+                    <a href="/browse.html">View</a>
+                </li>
+                <li>
+                    <a href="/near-search.html">Search</a>
+                </li>
+                <li>
+                    <a href="/catalogue1.html">Download</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="body" class="browse">
+        <div class="header">
+            <div>
+                <h1>Browse the CANDELS Galaxies</h1>
+                <p>The following are the first 7 galaxies from each group in the catalogue. Click on a group to see more galaxies and
+                    the details of each galaxy (ra, dec, photometry, redshift etc.)</p>
+                <div style="width:70%;padding-left:50px; margin:0 auto;">
+                    <a th:href="@{/browse/(level=${displayLevel},from=0,to=31)}" class="more">0-30</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=31,to=61)}" class="more">31-60</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=61,to=91)}" class="more">61-90</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=91,to=121)}" class="more">91-120</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=121,to=151)}" class="more">121-150</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=151,to=181)}" class="more">151-180</a>
+                    <a th:href="@{/browse/(level=${displayLevel},from=181,to=201)}" class="more">181-200</a>
+                </div>
+
+            </div>
+
+
+            <div id="gal-class" th:each="mosaic : ${mosaics}" style="padding:0px">
+                <a th:href="@{/view/(class=${mosaic.classNum},level=${displayLevel})}">
+                    <img src=""
+                         th:src="@{/{folder}/mosaic_{class}_{rows}.{ext}(class=${mosaic.classNum},folder=${mosaic.level},rows=${mosaic.rows},ext=${mosaic.ext})}"
+                         th:title="${mosaic.title}"
+                         th:alt="${mosaic.alt}" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

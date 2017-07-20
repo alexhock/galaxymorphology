@@ -1,0 +1,20 @@
+@echo off
+set NUM_EPOCHS=%1
+set MAX_NODES=%2
+set NUM_THREADS=%3
+set DATA_PATH=%4
+
+rem euclidean is 1
+set METRIC=1
+
+set PROG_PATH=.\bin\Debug\RunGNG.exe
+
+
+set OUTPUT_FOLDER=%DATA_PATH%/output
+
+set INPUT_FILE=%DATA_PATH%/samples.csv
+
+
+%PROG_PATH% %INPUT_FILE% %OUTPUT_FOLDER% %NUM_EPOCHS% %MAX_NODES% %NUM_THREADS% %METRIC%
+
+echo RAN Command: %PROG_PATH% %INPUT_FILE% %OUTPUT_FOLDER% %NUM_EPOCHS% %MAX_NODES% %NUM_THREADS% %METRIC%
