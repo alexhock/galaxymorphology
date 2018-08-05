@@ -1,6 +1,6 @@
 # CANDELS Catalogue
 
-The CSV catalog data of CANDELS galaxies classifications that was used to show the galaxies on the www.galaxy.uk site can be downloaded from here: 
+The CSV catalog data of CANDELS galaxies classifications that was used to show the galaxies on the www.galaxyml.uk site can be downloaded from here: 
 
 [https://github.com/alexhock/galaxymorphology/catalogue/ml-candels-classifications.csv](https://github.com/alexhock/galaxymorphology/catalogue/ml-candels-classifications.csv)
 
