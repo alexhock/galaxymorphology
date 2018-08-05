@@ -2,7 +2,11 @@
 
 Code for the website www.galaxyml.uk and for the related MNRAS paper: An automatic taxonomy of galaxy morphology using unsupervised machine learning 
 
-This repository contains source code for multi-threaded versions of several machine learning algorithms.
+The catalogue of CANDELS that was created by the technique and described in the paper can be found here: 
+[catalogue](https://github.com/alexhock/galaxymorphology/tree/master/catalogue)
+
+
+This repository also contains source code for multi-threaded versions of several machine learning algorithms.
 
 The C# code analyses FITS survey images.
 
