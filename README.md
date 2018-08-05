@@ -1,6 +1,6 @@
 # Galaxy Morphology 
 
-Code for the website www.galaxyml.uk and for the related MNRAS paper: An automatic taxonomy of galaxy morphology using unsupervised machine learning 
+Code for the website www.galaxyml.uk and for the related MNRAS paper: Hocking, A et al. "An automatic taxonomy of galaxy morphology using unsupervised machine learning" MNRAS (2018)
 
 The catalogue of CANDELS that was created by the technique and described in the paper can be found here: 
 [catalogue](https://github.com/alexhock/galaxymorphology/tree/master/catalogue)
